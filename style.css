@@ -1,0 +1,117 @@
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.questionsWrapper {
+  min-height: 38.69rem;
+  width: 43.75rem;
+  border-radius: 1.56rem;
+  box-shadow: 0px 7px 5px rgba(128, 128, 128, 0.466);
+  padding: 3.25rem 4.88rem;
+  color: #0e1c4e;
+  margin: auto;
+  margin-top: 5.31rem;
+  margin-bottom: 5.31rem;
+}
+.questionsWrapper > * {
+  margin-right: auto;
+  margin-left: auto;
+}
+.questionsTitle {
+  font-size: min(5vw, 1.63rem);
+  font-weight: bolder;
+  text-align: center;
+}
+.questionsSubtitle {
+  font-size: 0.88rem;
+  width: min(90%, 26.94rem);
+  text-align: center;
+  margin-top: 0.19rem;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: min(90%, 34rem);
+  min-height: 2.69rem;
+  font-size: 0.88rem;
+  position: relative;
+  padding: 1.19rem;
+  cursor: pointer;
+  margin-top: 1.75rem;
+  padding-left: 0.66rem;
+}
+.accordion .shownInfo div {
+  font-size: 1.3rem;
+  padding: 0px;
+  line-height: 1;
+}
+.shownInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.firstAccordion {
+  background-color: #ffedd5;
+  border-left: 5px solid #fb923c;
+}
+.secondAccordion {
+  background-color: #e0e7ff;
+  border-left: 5px solid #818cf8;
+}
+.thirdAccordion {
+  background-color: #ede9fe;
+  border-left: 5px solid #a78bfa;
+}
+.fourthAccordion {
+  background-color: #fce7f3;
+  border-left: 5px solid #f472b6;
+}
+.fifthAccordion {
+  background-color: #f0fdf4;
+  border-left: 5px solid #4ade80;
+}
+.hiddenInfo {
+  text-align: left;
+  height: 0px;
+  max-height: 0px;
+  opacity: 0%;
+}
+.is-open {
+  text-align: left;
+  padding-top: 5px;
+  height: fit-content;
+  max-height: 999px;
+  opacity: 100%;
+  transition: max-height 1000ms 0ms;
+}
+.bolder > span {
+  font-weight: bold;
+}
+.shownInfo > div {
+  transition: transform 500ms 0ms;
+}
+.bolder > div {
+  transform: rotate(45deg);
+  transition: transform 500ms 0ms;
+}
+@media (max-width: 900px) {
+  .questionsWrapper {
+    padding: 50px 5px;
+    width: 90%;
+  }
+  .shownInfo {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordion Component - FrontendPro Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="mainWrapper">
+    <div class="questionsWrapper">
+      <p class="questionsTitle">Frequently Asked Questions</p>
+      <p class="questionsSubtitle">Answers to common questions about
+        our frontend challenges website.</p>
+        
+      <div class="accordion firstAccordion">
+
+        <div class="shownInfo">
+          <span>Can I use FrontendPro to prepare for a frontend job interview?</span>
+          <div>+</div>
+        </div>
+        <div class="hiddenInfo">
+          Ex nisi adipisci nam assumenda molestiae est obcaecati dicta qui voluptatem nulla sit doloremque molestias sed
+          autem
+          omnis. Eos assumenda dolorum At illo rerum sit doloremque velit rem eligendi harum ut culpa nesciunt.
+        </div>
+      </div>
+
+      <div class="accordion secondAccordion">
+        <div class="shownInfo">
+          <span>Do I need to have experience in frontend dev to use FrontendPro?</span>
+          <div>+</div>
+        </div>
+        <div class="hiddenInfo">
+          Ex nisi adipisci nam assumenda molestiae est obcaecati dicta qui voluptatem nulla sit doloremque molestias sed
+          autem
+          omnis.
+        </div>
+      </div>
+
+
+      <div class="accordion thirdAccordion">
+        <div class="shownInfo">
+          <span>How often are new challenges added to FrontendPro?</span>
+          <div>+</div>
+        </div>
+        <div class="hiddenInfo">
+          Ex nisi adipisci nam assumenda molestiae est obcaecati dicta qui voluptatem nulla sit doloremque molestias sed
+          autem
+          omnis. Eos assumenda dolorum At illo rerum sit doloremque velit rem eligendi harum ut culpa nesciunt.
+        </div>
+      </div>
+
+
+      <div class="accordion fourthAccordion">
+        <div class="shownInfo">
+          <span>What kind of frontend challenges can I expect to find on FrontendPro?</span>
+          <div>+</div>
+        </div>
+        <div class="hiddenInfo">
+          Ex nisi adipisci nam assumenda molestiae est obcaecati dicta qui voluptatem nulla sit doloremque molestias sed
+          autem
+          omnis. Eos assumenda dolorum At illo rerum sit doloremque velit rem eligendi harum ut culpa nesciunt.
+        </div>
+      </div>
+
+      <div class="accordion fifthAccordion">
+        <div class="shownInfo">
+          <span>Can I use libraries/frameworks on these projects?</span>
+          <div>+</div>
+        </div>
+        <div class="hiddenInfo">
+          Ex nisi adipisci nam assumenda molestiae est obcaecati dicta qui voluptatem nulla sit doloremque molestias sed
+          autem
+          omnis. Eos assumenda dolorum At illo rerum sit doloremque velit rem eligendi harum ut culpa nesciunt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  let wrappers = document.getElementsByClassName('shownInfo')
+  let hiddens = document.getElementsByClassName('hiddenInfo')
+
+  for (let i = 0; i < wrappers.length; i++) {
+    wrappers[i].addEventListener('click', () => {
+      wrappers[i].classList.toggle('bolder')
+      hiddens[i].classList.toggle('is-open')
+    })
+  }
+
+</script>
+
+</html>
